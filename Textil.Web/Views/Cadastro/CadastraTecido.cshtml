@@ -1,0 +1,25 @@
+﻿@model Textil.Web.Models.Tecido
+@{
+    ViewBag.Title = "Cadastro de Tecido";
+}
+
+<h2>Tecido Cadastrado com sucesso</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.Codigo)</th>
+            <th>@Html.DisplayNameFor(x => x.Nome)</th>
+            <th>@Html.DisplayNameFor(x => x.Categoria)</th>
+            <th>@Html.DisplayNameFor(x => x.Cor)</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.DisplayFor(x => x.Codigo)</td>
+            <td>@Html.DisplayFor(x => x.Nome)</td>
+            <td>@Html.DisplayFor(x => x.Categoria)</td>
+            <td>@Html.DisplayFor(x => x.Cor)</td>
+        </tr>
+    </tbody>
+</table>

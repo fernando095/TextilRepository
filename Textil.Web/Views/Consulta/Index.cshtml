@@ -1,0 +1,37 @@
+﻿@model Textil.Web.Models.Tecido
+
+@{
+    ViewBag.Title = "Consulta de Tecido";
+}
+
+<h2></h2>
+
+@using (@Html.BeginForm("ConsultaTecido", "Consulta", FormMethod.Post))
+{
+    <fieldset>Consulta de Tecidos</fieldset>
+    <div>
+        @Html.LabelFor(x => x.Codigo)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Codigo)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Nome)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Nome)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Cor)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Cor)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Categoria)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Categoria)
+    </div>
+    <input type="submit" value="Consultar" />
+}

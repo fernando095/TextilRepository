@@ -1,0 +1,39 @@
+﻿@model Textil.Web.Models.Tecido
+
+@{
+    ViewBag.Title = "Cadastro de Tecido";
+}
+
+<h2></h2>
+
+@using (@Html.BeginForm("CadastraTecido", "Cadastro", FormMethod.Post))
+{
+    <fieldset>Cadastro de Tecidos</fieldset>
+    <div>
+        @Html.LabelFor(x => x.Codigo)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Codigo)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Nome)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Nome)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Cor)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Cor)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Categoria)
+    </div>
+    <div>
+        @Html.EditorFor(x => x.Categoria)
+    </div>
+    @Html.EditorFor(x => x.Acabamento)
+    <input type="file" value="Selecionar" />
+    <input type="submit" value="Cadastrar!" />
+}
